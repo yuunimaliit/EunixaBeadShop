@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eunixa's Bead Shop</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Praise&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+
+
+<nav>
+  <div class="logo"> 
+    <img src="logo.png" alt="Eunixa's bead" />
+      <span>Eunixa's Bead Shop</span></div>
+
+ 
+  <div class="menu-toggle" id="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <div class="nav-links" id="nav-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#why-us">Why Us</a>
+    <a href="#services">Services</a>
+    <a href="#beads">Bead Categories</a>
+    <a href="#final-products">Products</a>
+    <a href="#feedback">Feedback</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+
+
+  <header id="home">
+    <h1 class="glow-head pop">Eunixa's Bead Shop</h1>
+    <p class="slide-left">Handcrafted with love and creativity — express your personality with every bead!</p>
+    <a href="#contact" class="btn pop">Book Now</a>
+  </header>
+
+ 
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p class="pop">Your go-to place for cute, colorful, and stylish cellphone lanyards! 
+      Every design is handcrafted to match your aesthetic and personality.</p>
+        <p class="pop"> Our mission is to bring joy through creativity, one bead at a time.</p>
+  </section>
+
+  <section id="why-us">
+    <h2>Why Choose Us?</h2>
+    <div class="why-container">
+      <div class="why-card slide-left">
+         <i class="fas fa-heart"></i>
+        <h3>Handcrafted with Love</h3>
+        <p>Each lanyard is handmade with care and creativity.</p>
+      </div>
+      <div class="why-card pop">
+        <i class="fas fa-gem"></i>
+        <h3>Unique Designs</h3>
+        <p>No two lanyards are the same 
+           every piece is special!</p>
+      </div>
+      <div class="why-card slide-right">
+        <i class="fas fa-smile"></i>
+        <h3>Customer Satisfaction</h3>
+        <p>We prioritize quality and happiness in every order.</p>
+      </div>
+    </div>
+  </section>
+
+
+  
+ <section id="services">
+    <h2 style="text-align: center;">Our Services</h2>
+    <div class="services">
+      <div class="service-card slide-left">
+        <i class="fas fa-palette"></i>
+        <h3>Custom Bead Designs</h3>
+        <p>Choose your colors, patterns, and charms to match your style!</p>
+      </div>
+
+      <div class="service-card pop-up">
+       <i class="fas fa-gift"></i>
+        <h3>Gift Orders</h3>
+        <p>We pack your orders beautifully for any special occasion.</p>
+      </div>
+
+      <div class="service-card slide-right">
+         <i class="fas fa-shipping-fast"></i>
+        <h3>Fast & Reliable Delivery</h3>
+        <p>Your custom lanyards arrive safely and on time!</p>
+      </div>
+
+    </div>
+  </section>
+
+ <section id="beads" class="bead-product">
+    <h2>Our Bead Categories </h2>
+
+    <div class="filter-buttons">
+  <button class="filter-btn active" data-category="all">All</button>
+  <button class="filter-btn" data-category="standard">Standard Beads</button>
+  <button class="filter-btn" data-category="2d">2D Charms</button>
+  <button class="filter-btn" data-category="3d">3D Charms</button>
+  <button class="filter-btn" data-category="acrylic">Acrylic Cards</button>
+  <button class="filter-btn" onclick="location.href='#final-products'">Finished Products</button>
+</div>
+
+<div class="bead-scroll-wrapper">
+    <button class="scroll-btn left" onclick="scrollBeads('left')">&#10094;</button>
+
+    <div class="bead-scroll">
+      <div class="bead-container">
+
+        <div class="bead-card pop" data-category="standard">
+        <img src="letters.jpg" alt="Standard Beads" />
+        <h3>Standard Beads</h3>
+        <p>₱69</p>
+      </div>
+      <div class="bead-card pop" data-category="standard">
+        <img src="circle.jpg" alt="Standard Beads" />
+        <h3>Standard Beads</h3>
+        <p>₱69</p>
+      </div>
+
+      <div class="bead-card pop" data-category="2d">
+        <img src="head.png" alt="2D Charms" />
+        <h3>2D Character Heads</h3>
+        <p>₱109</p>
+      </div>
+        <div class="bead-card pop" data-category="2d">
+        <img src="whole.png" alt="2D Charms" />
+        <h3>2D Whole Body</h3>
+        <p>₱109</p>
+      </div>
+       <div class="bead-card pop" data-category="2d">
+        <img src="wand.png" alt="2D Charms" />
+        <h3>2D Wand Beads</h3>
+        <p>₱109</p>
+      </div>
+
+      <div class="bead-card pop" data-category="3d">
+        <img src="stand.png" alt="3D Charms" />
+        <h3>3D Beads</h3>
+        <p>₱159</p>
+      </div>
+
+      <div class="bead-card pop" data-category="acrylic">
+        <img src="card.png" alt="Acrylic Cards" />
+        <h3>Character Cards</h3>
+        <p>₱89</p>
+      </div>
+      <div class="bead-card pop" data-category="acrylic">
+        <img src="cat.png" alt="Acrylic Cards" />
+        <h3>Cat Cards</h3>
+        <p>₱89 </p>
+      </div>
+      <div class="bead-card pop" data-category="acrylic">
+        <img src="acry.png" alt="Acrylic Cards" />
+        <h3>Little Sheep</h3>
+        <p>₱89</p>
+      </div>
+      <div class="bead-card pop" data-category="acrylic">
+        <img src="boy.png" alt="Acrylic Cards" />
+        <h3>Hirono Cards</h3>
+        <p>₱89</p>
+      </div>
+       <div class="scroll-buffer"></div>
+      </div>
+            </div>
+            <button class="scroll-btn right" onclick="scrollBeads('right')">&#10095;</button>
+  </div>
+  </section>
+
+  
+<section id="final-products">
+  <h2>Final Products</h2>
+
+  <div class="product-scroll-wrapper">
+    <!-- Left Button -->
+    <button class="scroll-btn left" onclick="scrollProducts('left')">&#10094;</button>
+
+    <!-- Scrollable container -->
+    <div class="product-scroll">
+      <div class="product-container">
+
+        <div class="product-card pop">
+          <img src="purple-moon.png" alt="Product 1">
+          <p>A whimsical keychain with purple beads and moon, butterfly, and heart charms.</p>
+        </div>
+
+        <div class="product-card pop">
+          <img src="purple-heart.png" alt="Product 2">
+          <p>This keychain features lavender beads, accented with heart and flower charms.</p>
+        </div>
+
+        <div class="product-card pop">
+          <img src="red-star.png" alt="Product 3">
+          <p>Red-themed keychain with star and heart charms, and cute bear accent.</p>
+        </div>
+
+        <div class="product-card pop">
+          <img src="chibi.png" alt="Product 4">
+          <p>Keychain with round lavender and pink beads with letter charms.</p>
+        </div>
+
+        <div class="product-card pop">
+          <img src="nurse2.png" alt="Product 5">
+          <p>Gold clip with nurse charm and letter beads spelling “Nurse”.</p>
+        </div>
+
+        <div class="product-card pop">
+          <img src="nurse1.png" alt="Product 6">
+          <p>Includes nurse’s cap, syringe, and stethoscope charms with “Jane”.</p>
+        </div>
+
+        <div class="product-card pop">
+          <img src="white-heart.png" alt="Product 7">
+          <p>White and gold beads with a shimmering butterfly charm.</p>
+        </div>
+
+        <div class="product-card pop">
+          <img src="unicorn.png" alt="Product 8">
+          <p>Pastel keychain with unicorn charm and “Annika” name beads.</p>
+        </div>
+
+        <div class="product-card pop">
+          <img src="heart.png" alt="Product 9">
+          <p>White and gold accents with a textured heart and butterfly charm.</p>
+        </div>
+
+        <div class="scroll-buffer"></div>
+      </div>
+    </div>
+
+    <!-- Right Button -->
+    <button class="scroll-btn right" onclick="scrollProducts('right')">&#10095;</button>
+  </div>
+</section>
+
+
+
+  
+  <section id="feedback">
+    <h2 style="text-align: center;">Customer's Feedback</h2>
+    <div class="feedbacks">
+      <div class="feedback-card-1 slide-left">
+        <img src="feed1.jpeg" alt="">
+        <h3>Customer 1</h3>
+      </div>
+
+      <div class="feedback-card-2 pop-up">
+         <img src="feed2.jpeg" alt="">
+        <h3>Customer 2</h3>
+      </div>
+
+  </section>
+
+
+  
+ 
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <p><i class="fas fa-map-marker-alt"></i> Payatas A, Quezon City, Philippines</p>
+        <p><i class="fas fa-phone"></i> +63 991 942 6235</p>
+        <p><i class="fas fa-envelope"></i> eunijanej@gmail.com</p>
+
+        
+        <div class="social-links">
+          <a href="https://web.facebook.com/eunixa" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+        
+        <p>Developed by: Yuuningmaliit</p>
+      </div>
+    </div>
+    <a href="mailto:eunijanej@gmail.com" class="btn">Send an Inquiry</a>
+  </section>
+  
+  
+  <footer>
+    <p>© 2025 Eunixa's Bead Shop | All Rights Reserved</p>
+  </footer>
+
+
+  
+
+  <script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const navlinks = document.getElementById("nav-links");
+
+  menuToggle.addEventListener("click", () => {
+    navlinks.classList.toggle("active");
+    menuToggle.innerHTML = navlinks.classList.contains("active")
+      ? '<i class="fas fa-times"></i>'
+      : '<i class="fas fa-bars"></i>';
+  });
+</script>
+<script>
+  const navLinks = document.querySelectorAll(".nav-links a");
+  
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      
+      const targetId = link.getAttribute("href");
+      const targetSection = document.querySelector(targetId);
+
+      if (targetSection) {
+        
+        const animElements = targetSection.querySelectorAll(
+          ".pop, .slide-left, .slide-right, .slideTop, .slideBottom, .pop-up"
+        );
+
+        animElements.forEach(el => {
+          el.style.animation = "none"; 
+          void el.offsetWidth;        
+          el.style.animation = "";    
+        });
+      }
+    });
+  });
+</script>
+
+ <script>
+    const filterButtons = document.querySelectorAll('.filter-btn');
+const productCards = document.querySelectorAll('.bead-card');
+
+filterButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const category = button.getAttribute('data-category');
+
+    filterButtons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+
+    productCards.forEach(card => {
+      if (category === 'all' || card.dataset.category === category) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+});
+
+  </script>
+
+  <script>
+function scrollBeads(direction) {
+  const scrollContainer = document.querySelector('.bead-scroll');
+  const scrollAmount = 300;
+  if (direction === 'left') {
+    scrollContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  } else {
+    scrollContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  }
+}
+</script>
+
+<script>
+function scrollProducts(direction) {
+  const container = document.querySelector('#final-products .product-scroll');
+  const scrollAmount = 300;
+  container.scrollBy({
+    left: direction === 'left' ? -scrollAmount : scrollAmount,
+    behavior: 'smooth'
+  });
+};
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
